@@ -19,7 +19,7 @@ public interface itemClient {
     List<ItemDTO> queryItemByIds(@RequestParam("ids") Collection<Long> ids);
 
     @ApiOperation("批量扣减库存")
-    @PutMapping("/stock/deduct")
+    @PutMapping("/items/stock/deduct")
     void deductStock(@RequestBody List<OrderDetailDTO> items);
 }
 
